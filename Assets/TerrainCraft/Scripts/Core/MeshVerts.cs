@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 namespace TerrainCraft
-{
+{ 
     public class MeshVerts
     {
         public static TerrainCraft terrain;
@@ -44,9 +44,28 @@ namespace TerrainCraft
             else
                 points.AddRange(GetFieldPointsHorizontalDefault(fieldValue, heights));
 
-
+            return AdjustBorderVertices(points, field);
+        }
+        
+        private static List<Vector3> AdjustBorderVertices(List<Vector3> points, Field field)
+        {
+            const float snapThreshold = 0.001f;
+    
+            for (int i = 0; i < points.Count; i++)
+            {
+                Vector3 point = points[i];
+        
+                if (Mathf.Abs(point.x) < snapThreshold) point.x = 0;
+                if (Mathf.Abs(point.x - 1) < snapThreshold) point.x = 1;
+                if (Mathf.Abs(point.z) < snapThreshold) point.z = 0;
+                if (Mathf.Abs(point.z - 1) < snapThreshold) point.z = 1;
+        
+                points[i] = point;
+            }
+    
             return points;
         }
+        
         public static List<Vector3> GetFieldPointsHorizontalDefault(int value, float[] heights)
         {
             List<Vector3> points = new List<Vector3>();

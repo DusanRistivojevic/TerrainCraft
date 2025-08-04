@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace TerrainCraft
 {
@@ -38,7 +40,7 @@ namespace TerrainCraft
         [Range(0, 0.5f)]
         public float prefabRandomSize = 0.25f;
 
-        public bool HideChildren = true;
+        public bool HideChildren = false;
 
 
         public int FieldGroupSize = 16;
@@ -140,6 +142,7 @@ namespace TerrainCraft
         public void PackTextures()
         {
             TerrainMaterial = new Material(Shader.Find("Shader Graphs/URPTerrainCraftShader"));
+            
             TextureAtlas = new Texture2D(2048, 2048, TextureFormat.ARGB32, false);
             Icons = new Texture2D[8];
             for (int i = 0; i < Textures.Length; i++)
@@ -288,7 +291,7 @@ namespace TerrainCraft
             wg.terrain = this;
             return wg;
         }
-        void RepaintAllGroups()
+        void RepaintAllGroups_v1()
         {
             if (Groups == null || Groups[0] == null)
                 return;
@@ -296,6 +299,120 @@ namespace TerrainCraft
                 fg.Repaint();
 
         }
+        
+        public void RepaintAllGroups_v2()
+        {
+            if (Groups == null || Groups[0] == null)
+                return;
+    
+            foreach (FieldGroup fg in Groups)
+            {
+                Mesh mesh = fg.GetComponent<MeshFilter>().sharedMesh;
+                if (mesh != null)
+                {
+                    mesh.RecalculateNormals();
+                }
+            }
+    
+            for (int i = 0; i < Groups.Count; i++)
+            {
+                Groups[i].Repaint();
+        
+                if (i > 0) ProcessAdjacentGroups(Groups[i-1], Groups[i]);
+                if (i < Groups.Count - 1) ProcessAdjacentGroups(Groups[i], Groups[i+1]);
+            }
+        }
+
+        public void RepaintAllGroups()
+        {
+            if (Groups == null || Groups[0] == null)
+                return;
+            
+            Dictionary<Vector3, List<Tuple<FieldGroup, int>>> globalBoundaryMap = 
+                new Dictionary<Vector3, List<Tuple<FieldGroup, int>>>();
+            
+            foreach (FieldGroup group in Groups)
+            {
+                group.Repaint();
+                
+                foreach (var kvp in group.boundaryVertices)
+                {
+                    Vector3 globalPos = group.transform.TransformPoint(kvp.Key);
+                    
+                    if (!globalBoundaryMap.ContainsKey(globalPos))
+                    {
+                        globalBoundaryMap[globalPos] = new List<Tuple<FieldGroup, int>>();
+                    }
+                    
+                    foreach (int vertexIndex in kvp.Value)
+                    {
+                        globalBoundaryMap[globalPos].Add(new Tuple<FieldGroup, int>(group, vertexIndex));
+                    }
+                }
+            }
+            
+            foreach (var kvp in globalBoundaryMap)
+            {
+                if (kvp.Value.Count > 1) 
+                {
+                    Vector3 avgNormal = Vector3.zero;
+                    foreach (var tuple in kvp.Value)
+                    {
+                        FieldGroup group = tuple.Item1;
+                        int vertexIndex = tuple.Item2;
+                        Mesh mesh = group.GetComponent<MeshFilter>().sharedMesh;
+                        avgNormal += mesh.normals[vertexIndex];
+                    }
+                    avgNormal /= kvp.Value.Count;
+                    avgNormal = avgNormal.normalized;
+                    
+                    foreach (var tuple in kvp.Value)
+                    {
+                        FieldGroup group = tuple.Item1;
+                        int vertexIndex = tuple.Item2;
+                        Mesh mesh = group.GetComponent<MeshFilter>().sharedMesh;
+                        
+                        Vector3[] normals = mesh.normals;
+                        normals[vertexIndex] = avgNormal;
+                        mesh.normals = normals;
+                        
+                        group.GetComponent<MeshFilter>().sharedMesh = mesh;
+                    }
+                }
+            }
+        }
+        
+        private void ProcessAdjacentGroups(FieldGroup groupA, FieldGroup groupB)
+        {
+            Mesh meshA = groupA.GetComponent<MeshFilter>().sharedMesh;
+            Mesh meshB = groupB.GetComponent<MeshFilter>().sharedMesh;
+    
+            if (meshA == null || meshB == null) return;
+    
+            Vector3[] vertsA = meshA.vertices;
+            Vector3[] vertsB = meshB.vertices;
+            Vector3[] normalsA = meshA.normals;
+            Vector3[] normalsB = meshB.normals;
+    
+            float threshold = 0.01f;
+    
+            for (int i = 0; i < vertsA.Length; i++)
+            {
+                for (int j = 0; j < vertsB.Length; j++)
+                {
+                    if (Vector3.Distance(vertsA[i], vertsB[j]) < threshold)
+                    {
+                        Vector3 avgNormal = (normalsA[i] + normalsB[j]).normalized;
+                        normalsA[i] = avgNormal;
+                        normalsB[j] = avgNormal;
+                    }
+                }
+            }
+    
+            meshA.normals = normalsA;
+            meshB.normals = normalsB;
+        }
+        
         void RepaintGroups(List<FieldGroup> fgroup)
         {
             if (Groups == null || Groups[0] == null)
@@ -617,6 +734,6 @@ namespace TerrainCraft
             float zMax = transform.position.z + Height * TerrainScale;
 
             return pos.x < xMax && pos.x > xMin && pos.z < zMax && pos.z > zMin;
-        }
+        } 
     }
 }
