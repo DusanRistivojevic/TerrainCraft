@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 93f59e0c0949c714fa8582fdf23a2bc6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Meshes/Materials/TreeMaterial_5.mat
+  uploadId: 751686

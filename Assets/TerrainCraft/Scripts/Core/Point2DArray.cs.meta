@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f0b0a324e6f57b144aaf809b58e1a1ce
+timeCreated: 1468960384
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/Point2DArray.cs
+  uploadId: 751686

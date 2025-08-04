@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f28fdda003cfb74e80b8729ec396489
+timeCreated: 1470040383
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Shaders/TerrainCraftVertexAlphaUnlit.shader
+  uploadId: 751686

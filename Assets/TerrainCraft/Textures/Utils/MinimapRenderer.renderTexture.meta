@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cd861a8d8e5ddae4d83f98e0aca992c5
+timeCreated: 1449699564
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Textures/Utils/MinimapRenderer.renderTexture
+  uploadId: 751686

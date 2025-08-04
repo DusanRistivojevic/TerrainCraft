@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6414d3f875d3a67459296f6d403e3b4d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Demo/TimeOfDay.cs
+  uploadId: 751686

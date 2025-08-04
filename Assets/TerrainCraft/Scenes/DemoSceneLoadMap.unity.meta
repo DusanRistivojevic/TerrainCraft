@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 430b2ac9fb21ad44aa16421248e5e5d7
+timeCreated: 1448937577
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scenes/DemoSceneLoadMap.unity
+  uploadId: 751686

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d17ab4074aff2cc41b8909cc26cc2cd6
+timeCreated: 1453159797
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/Calc.cs
+  uploadId: 751686

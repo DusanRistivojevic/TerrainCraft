@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d237c37bfdc03a41ae595dbe36be9c8
+timeCreated: 1469856116
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Meshes/Cliffs/Wall1.asset
+  uploadId: 751686

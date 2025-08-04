@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0d942319127fe5345849b25256d1cf52
+timeCreated: 1470044187
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Shaders/TerrainCraftSimpleWaterUnlit.shader
+  uploadId: 751686

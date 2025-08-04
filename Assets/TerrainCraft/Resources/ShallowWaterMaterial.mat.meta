@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e12cd5b32f56014429e80f0bfa126329
+timeCreated: 1469835143
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Resources/ShallowWaterMaterial.mat
+  uploadId: 751686

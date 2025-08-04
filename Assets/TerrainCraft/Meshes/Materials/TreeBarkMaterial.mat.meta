@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d757cbc1cbed1c4c8695e4de78b446f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Meshes/Materials/TreeBarkMaterial.mat
+  uploadId: 751686

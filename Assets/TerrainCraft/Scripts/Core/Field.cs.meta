@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ae3ed06a6ec2c7b449a26c1d38a46eb3
+timeCreated: 1453303190
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/Field.cs
+  uploadId: 751686

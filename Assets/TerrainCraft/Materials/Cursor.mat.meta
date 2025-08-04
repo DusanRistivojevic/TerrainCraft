@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0a68770522ef5a44d9035f1849262dce
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Materials/Cursor.mat
+  uploadId: 751686

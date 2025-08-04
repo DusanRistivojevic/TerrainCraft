@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6975f658f1f140d4f90b2ef2908c400a
+timeCreated: 1470044603
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Materials/Foam.mat
+  uploadId: 751686

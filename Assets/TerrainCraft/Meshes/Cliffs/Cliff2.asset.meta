@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7563ac58c47905742ad5962cad15173d
+timeCreated: 1469825469
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Meshes/Cliffs/Cliff2.asset
+  uploadId: 751686

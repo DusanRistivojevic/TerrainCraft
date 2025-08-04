@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d43c42438147c7343884a5c8c79b157e
+timeCreated: 1455832924
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/MeshVerts.cs
+  uploadId: 751686

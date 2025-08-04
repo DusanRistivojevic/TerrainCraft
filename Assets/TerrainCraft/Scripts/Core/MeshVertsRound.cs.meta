@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b12100a61afa5c54b96664ab684fe0c2
+timeCreated: 1455834676
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/MeshVertsRound.cs
+  uploadId: 751686

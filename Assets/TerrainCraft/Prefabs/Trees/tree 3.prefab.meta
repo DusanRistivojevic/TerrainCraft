@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ca02ba3d658ac0e459f1bcbefc9e655a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Prefabs/Trees/tree 3.prefab
+  uploadId: 751686

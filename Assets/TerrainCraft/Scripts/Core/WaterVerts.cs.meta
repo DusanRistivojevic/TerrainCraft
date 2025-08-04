@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e2061df649d4fae4c9fd3301569167cc
+timeCreated: 1469835063
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/WaterVerts.cs
+  uploadId: 751686

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1704990769829531172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1704990769829531169}
+  - component: {fileID: 1704990769829531174}
+  m_Layer: 8
+  m_Name: TerrainCraft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1704990769829531169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704990769829531172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704990769829531174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704990769829531172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec5c587ba4e4e8458266517135cc72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: 
+  Width: 64
+  Height: 64
+  TerrainSize: 1
+  CliffHeight: 1
+  CliffMesh: {fileID: 0}
+  clifftexture: {fileID: 2800000, guid: 30f4be45c2c59fe4589822f2f3c79c16, type: 3}
+  rndMin: -0.144
+  rndMax: 0.096
+  CliffType: 0
+  WaterMaterial1: {fileID: 2100000, guid: e12cd5b32f56014429e80f0bfa126329, type: 2}
+  WaterMaterial2: {fileID: 2100000, guid: 67a1192d809fe9246af70e3d6e0dc167, type: 2}
+  Textures:
+  - {fileID: 2800000, guid: 4abf0f7bac415ba46b50ef0c10865b94, type: 3}
+  - {fileID: 2800000, guid: 6280fb374108c934b930ccd0b47082fd, type: 3}
+  - {fileID: 2800000, guid: b140b759262e7b64bac6a75459eadd79, type: 3}
+  - {fileID: 2800000, guid: 58e04a73839d8774cbca0a2c81a9325b, type: 3}
+  - {fileID: 2800000, guid: 24b2599a4575e3e49bc916c6e2c55b52, type: 3}
+  - {fileID: 2800000, guid: bdca8f4ae5ea77c459f8982f4932691d, type: 3}
+  - {fileID: 2800000, guid: f880168ad7e757d4d825702df8afe3dc, type: 3}
+  Prefabs:
+  - {fileID: 2924934780316820805, guid: 922aeeb9fcbb1114c853f5e0588d1390, type: 3}
+  - {fileID: 2924934780316820805, guid: 37a6ccf4a6e16f74e9acd720530fe3a2, type: 3}
+  - {fileID: 2924934780316820805, guid: ca02ba3d658ac0e459f1bcbefc9e655a, type: 3}
+  PrefabRandomRotation: 1
+  PrefabRandomMovement: 0.1
+  prefabRandomSize: 0.25
+  TerrainLighting: 1
+  HideChildren: 1
+  GroupSize: 16
+  LengthSegments: 4
+  WidthSegments: 4
+  TerrainMaterial: {fileID: 0}
+  TerrainLightObject: {fileID: 0}
+  Fields: {fileID: 0}
+  Points: {fileID: 0}
+  Groups:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cursorObject: {fileID: 0}
+  Icons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  TextureAtlas: {fileID: 0}
+  PrefabParent: {fileID: 0}

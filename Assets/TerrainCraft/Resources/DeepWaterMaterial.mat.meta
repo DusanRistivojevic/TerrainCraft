@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67a1192d809fe9246af70e3d6e0dc167
+timeCreated: 1469851284
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Resources/DeepWaterMaterial.mat
+  uploadId: 751686

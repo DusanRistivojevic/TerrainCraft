@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: c55256fa799d9a54c99fff82a2f80a75
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Demo/TerrainCraftRuntimeEditor.cs
+  uploadId: 751686

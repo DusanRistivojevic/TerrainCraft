@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d87388723206e524882dd58297ad5e08
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/LoadMapFromAsset.cs
+  uploadId: 751686

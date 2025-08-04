@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de94fa050171ca843a7a4d5cd7bed641
+timeCreated: 1470048565
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Resources/FoamParticle.prefab
+  uploadId: 751686

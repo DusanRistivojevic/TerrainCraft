@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 38ed1f39da010004495ecac1a83a5485
+timeCreated: 1470034692
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/Color2DArray.cs
+  uploadId: 751686

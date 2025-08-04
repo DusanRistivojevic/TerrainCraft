@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 09065f3fbbc09254e868206e70b65630
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Prefabs/TerrainCraft.prefab
+  uploadId: 751686

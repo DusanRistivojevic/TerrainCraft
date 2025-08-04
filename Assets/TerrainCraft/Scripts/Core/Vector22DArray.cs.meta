@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 40d7cf6385f77a542abb96468a28d417
+timeCreated: 1470034672
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/Scripts/Core/Vector22DArray.cs
+  uploadId: 751686

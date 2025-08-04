@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 389645df17d2acf4e8d5d6b92f8da694
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314308
+  packageName: TerrainCraft - 3D RTS Terrain
+  packageVersion: 1.1.2
+  assetPath: Assets/TerrainCraft/SavedTerrains/TerrainCraft.json
+  uploadId: 751686
