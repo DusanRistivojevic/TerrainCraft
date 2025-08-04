@@ -265,7 +265,13 @@ namespace TerrainCraft
                 return;
             }
             Event e = Event.current;
-            Ray ray = Camera.current.ScreenPointToRay(new Vector3(e.mousePosition.x, -e.mousePosition.y + Camera.current.pixelHeight));
+            Vector3 mousePosition = Event.current.mousePosition;
+
+            float mult = EditorGUIUtility.pixelsPerPoint;
+            mousePosition.y = Camera.current.pixelHeight - mousePosition.y * mult;
+            mousePosition.x *= mult;
+
+            Ray ray = Camera.current.ScreenPointToRay(mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
