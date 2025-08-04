@@ -266,9 +266,18 @@ namespace TerrainCraft
             }
             Event e = Event.current;
             Ray ray = Camera.current.ScreenPointToRay(new Vector3(e.mousePosition.x, -e.mousePosition.y + Camera.current.pixelHeight));
-
-            selectionPointPosition = ray.direction * (ray.origin.y / -ray.direction.y) + ray.origin;
-
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                selectionPointPosition = hit.point;
+            }
+            else
+            {
+                if (GUIUtility.hotControl == GUIUtility.GetControlID(FocusType.Passive))
+                    GUIUtility.hotControl = 0;
+                if (cursor.gameObject.activeSelf)
+                    cursor.gameObject.SetActive(false);
+            }
             if (terrain.IsPointOnTerrain(selectionPointPosition))
             {
                 if (!cursor.gameObject.activeSelf)
